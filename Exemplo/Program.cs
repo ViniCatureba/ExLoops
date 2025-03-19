@@ -31,3 +31,22 @@ for (int i = 0; i< 6; i++)
 {
     Console.WriteLine(i);
 }
+
+// Tratamento de execeções
+int numero = int.Parse(Console.ReadLine());
+
+
+//Exception
+//IOException - In and Out - Entrada e saida
+//FormatException - Erros no formato (tipo de dado)
+
+// Try/Catch  - Tentar/Pegar
+
+try
+{
+    int num = int.Parse(Console.ReadLine());
+}
+catch (FormatException)
+{
+    Console.WriteLine("Informe apenas numeros");
+}
