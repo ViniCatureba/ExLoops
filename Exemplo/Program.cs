@@ -50,3 +50,22 @@ catch (FormatException)
 {
     Console.WriteLine("Informe apenas numeros");
 }
+catch (OverflowException ex)
+{
+    Console.WriteLine("O numero eh muito grande");
+}
+catch (DivideByZeroException ex)
+{
+    Console.WriteLine("Dividiu por 0")
+}
+finally
+{
+    Console.WriteLine();   //se deu erro ele finaliza o processo
+}
+
+
+int idade2 = int.Parse(Console.ReadLine());
+if(idade2 > 120)
+{
+    throw new ArgumentOutOfRangeException("Idade invalida");     //CRIA UM ERRO DE LOGICO DO SEU PROPRIO CODIGO)
+}
